@@ -27,7 +27,7 @@ However, the problem can be solved without the use of pow(x, i) as well, as illu
 // Can use the pow function to calculate term(x, n), though a fact(n) function will be needed instead
 float term(float x, int n)
 {
-    if(n == 0) return 1.0; // Base Case
+    if(n == 0) return 1.0; // Base Case: The first term(i.e. e^0) is 1
 
     return term(x, n-1) * (x/n);
 }
@@ -73,6 +73,6 @@ int main()
 
     printf("Result(Recursive): %f\n", ty_rec);
     printf("Result(Iterative): %f\n", ty_itr);
-
+    
     return 0;
 }
